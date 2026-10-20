@@ -1,0 +1,18 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/arcadsoftware/integrations
+- https://zapier.com/apps/arcad-software/integrations
+- https://n8n.io/integrations/arcadsoftware/
+- https://composio.dev/toolkits/arcadsoftware
+- https://monid.ai/tools/arcadsoftware
+checked:
+- https://composio.dev/toolkits/arcadsoftware
+- https://monid.ai/tools/arcadsoftware
+- https://n8n.io/integrations/arcadsoftware/
+- https://zapier.com/apps/arcad-software/integrations
+- https://zapier.com/apps/arcadsoftware/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

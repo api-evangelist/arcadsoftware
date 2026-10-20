@@ -1,0 +1,38 @@
+generated: '2026-10-20'
+method: probed
+source: https://www.arcadsoftware.com/privacy-policy/
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.arcadsoftware.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "Request access to your Personal Data. This enables you to receive a copy of the Personal Data we hold about you and to check that we are lawfully processing it."
+        note: Provides right to access personal data.
+      - source: https://www.arcadsoftware.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "Request correction of the Personal Data that we hold about you."
+        note: Right to correct data.
+      - source: https://www.arcadsoftware.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "Request erasure of your Personal Data. This enables you to ask us to delete or remove Personal Data where there is no good reason for us to continue processing it."
+        note: Right to delete data.
+      - source: https://www.arcadsoftware.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "Request the restriction of processing of your Personal Data."
+        note: Right to restrict processing.
+      - source: https://www.arcadsoftware.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "Request the transfer of your Personal Data."
+        note: Right to data portability.
+  data_retention:
+    evidence:
+      - source: https://www.arcadsoftware.com/privacy-policy/
+        http_status: 200
+        fetched: "true"
+        quote: "We will only retain your Personal Data for so long as we reasonably require it to use it for the purposes set out above ... unless a longer retention period is required by law (for example for regulatory purposes)."
+        note: Describes retention period policy.

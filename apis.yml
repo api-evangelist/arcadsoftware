@@ -1,23 +1,83 @@
 aid: arcadsoftware
+
 name: ARCAD Software
-description: 'ARCAD Software is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.arcadsoftware.com/wp-content/uploads/2025/09/arcad-software-logo-270.png
+
+description: 'ARCAD Software provides enterprise content management and digital transformation solutions, enabling organizations to manage documents, workflows, and data across on-premises and cloud environments. Their platform offers robust features such as document capture, indexing, secure storage, collaborative editing, and integration with third‑party systems. ARCAD focuses on delivering scalable, compliant, and user‑friendly tools for sectors like healthcare, finance, and public administration, helping clients improve efficiency, reduce operational costs, and meet regulatory requirements.'
+
 url: https://raw.githubusercontent.com/api-evangelist/arcadsoftware/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- Enterprise-Content-Management
+- Digital-Transformation
+- IBM-i
+- DevOps
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: security/arcadsoftware-vulnerability-disclosure.yml
+- type: SecurityTxt
+  url: well-known/arcadsoftware-security.txt
+- type: SecurityTxt
+  url: well-known/arcadsoftware-arcadsoftware-security.txt
+- type: WellKnown
+  url: well-known/arcadsoftware-well-known.yml
+- type: Hosts
+  url: hosts/arcadsoftware-hosts.yml
+- type: Vendors
+  url: vendors/arcadsoftware-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.arcadsoftware.com/privacy-policy/
+- type: DeveloperPortal
+  url: https://portal.arcadsoftware.com
+- type: VulnerabilityDisclosure
+  url: security/arcadsoftware-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/arcadsoftware-domain-security.yml
 - type: Website
-  url: https://arcadsoftware.com/
+  url: https://www.arcadsoftware.com/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-20'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://email.arcadsoftware.com/mcp
+    status: 403
+  - url: https://info.arcadsoftware.com/mcp
+    status: 403
+  - url: https://arcadsoftware.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
